@@ -1,0 +1,21 @@
+= Gilt Widgets
+
+- Code: git://TODO/path/to/code.git
+- Docs: http://TODO/
+- Bug tracker: http://TODO/
+- Build: http://TODO/
+
+== Description
+
+This repository is intended to serve as a template for new Gilt gems.
+
+Search the codebase for references to "widget" or "todo" to identify
+files that need to be updated.
+
+When releasing gems, please use the versioning strategy described at:
+
+http://semver.org/
+
+== Maintainers
+
+- {Bryan Helmkamp}[mailto:bhelmkamp@gilt.com]
