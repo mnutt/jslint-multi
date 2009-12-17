@@ -107,8 +107,6 @@ class Release < Thor
 
   desc "gem", "Push the gem to Gemcutter"
   def gem
-    # TODO - needs gilt-push
-    # Don't push until we have our own gemcutter instance
-    #sh "gilt-push pkg/#{read_gemspec.file_name}"
+    sh "gilt-release-gem pkg/#{read_gemspec.file_name}"
   end
 end
