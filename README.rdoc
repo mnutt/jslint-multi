@@ -1,21 +1,13 @@
-= Gilt Widgets
+= jslint-multi
 
-- Code: git://TODO/path/to/code.git
-- Docs: http://TODO/
-- Bug tracker: http://TODO/
-- Build: http://TODO/
+- Code: git://github.com/mnutt/jslint-multi.git
 
 == Description
 
-This repository is intended to serve as a template for new Gilt gems.
-
-Search the codebase for references to "widget" or "todo" to identify
-files that need to be updated.
-
-When releasing gems, please use the versioning strategy described at:
-
-http://semver.org/
+This gem runs jslint against all files in public/javascripts.  It
+was extracted from juicer and converted to use output similarly to
+rspec.
 
 == Maintainers
 
-- {Bryan Helmkamp}[mailto:bhelmkamp@gilt.com]
+- {Michael Nutt}[mailto:mnutt@gilt.com]

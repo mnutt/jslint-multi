@@ -1,19 +1,19 @@
-GEM_NAME = "gilt-widgets"
+GEM_NAME = "jslint-multi"
 
 module GemHelpers
 
   def generate_gemspec
     $LOAD_PATH.unshift(File.expand_path(File.join(File.dirname(__FILE__), "lib")))
-    require "gilt/widgets"
+    require 'jslint_multi'
 
     Gem::Specification.new do |s|
-      s.name      = GEM_NAME
-      s.version   = Gilt::Widgets::VERSION
-      s.author    = "Widget Author"
-      s.email     = "widget-author@gilt.com"
-      s.homepage  = "http://TODO/url/to/documentation"
-      s.summary   = "Widget summary (short)"
-      s.description  = "Widget description (longer)"
+      s.name      = "jslint-multi"
+      s.version   = JSLintMulti::VERSION
+      s.author    = "Michael Nutt"
+      s.email     = "mnutt@gilt.com"
+      s.homepage  = "http://github.com/mnutt/jslint-rails"
+      s.summary   = "Rake tasks to validate javascripts with jslint"
+      s.description  = "jslint-rails runs jslint on each js file in public/javascripts and returns the proper unix error codes."
 
       require "git"
       repo = Git.open(".")
@@ -23,10 +23,6 @@ module GemHelpers
 
       s.has_rdoc = true
       s.extra_rdoc_files = %w[README.rdoc History.txt]
-
-      # TODO: Specify dependencies on other gems (either Gilt or public)
-      # s.add_dependency "gilt-foobar", "~> 1.0"
-      # s.add_dependency "activesupport", "1.0"
     end
   end
 
