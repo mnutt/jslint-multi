@@ -2,13 +2,14 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jslint-multi}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Nutt"]
   s.date = %q{2010-03-02}
   s.description = %q{jslint-rails runs jslint on each js file in public/javascripts and returns the proper unix error codes.}
   s.email = %q{mnutt@gilt.com}
+  s.executables = ["jslint-multi"]
   s.extra_rdoc_files = [
     "README.rdoc",
     "History.txt"
