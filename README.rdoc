@@ -5,8 +5,19 @@
 == Description
 
 This gem runs jslint against all files in public/javascripts.  It
-was extracted from juicer and converted to use output similarly to
+was extracted from juicer and converted to use output similar to
 rspec.
+
+== Installation
+
+Add a rake task in lib/tasks/jslint.rake:
+
+task :jslint do
+  files = Dir["public/javascripts/*.js"]
+  system("jslint-multi #{files.flatten.join(' ')}")
+
+  exit $?.exitstatus
+end
 
 == Maintainers
 

@@ -1,3 +1,9 @@
+== git
+
+* 1 minor enhancement
+
+  * Improve README
+
 == 0.1.1 / 2010-03-02
 
 * 1 minor bugfix
