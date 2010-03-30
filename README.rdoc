@@ -12,12 +12,12 @@ rspec.
 
 Add a rake task in lib/tasks/jslint.rake:
 
-task :jslint do
-  files = Dir["public/javascripts/*.js"]
-  system("jslint-multi #{files.flatten.join(' ')}")
+  task :jslint do
+    files = Dir["public/javascripts/*.js"]
+    system("jslint-multi #{files.flatten.join(' ')}")
 
-  exit $?.exitstatus
-end
+    exit $?.exitstatus
+  end
 
 == Maintainers
 
