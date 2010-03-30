@@ -1,5 +1,5 @@
 class JSLintMulti
-  VERSION = "0.1.2"
+  VERSION = "0.1.3"
 
   def self.root
     File.expand_path(File.join(File.dirname(__FILE__), '..'))
